@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#40d0cad0">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/white"
+
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+
+            >
+
+                <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                       android:layout_alignParentLeft="true"
+                        android:text="Your Order"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+       <RelativeLayout
+        android:id="@+id/rl_recycle"
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view"
+                                                    >
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/outputList"
+              android:layout_width="fill_parent"
+              android:layout_height="310dp" />
+
+           <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:id="@+id/outputList1"
+                     android:layout_width="fill_parent"
+                     android:layout_height="222dp" android:visibility="gone"/>
+
+        </RelativeLayout>
+
+       </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_above="@+id/btn_order" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+        <RelativeLayout
+                android:id="@+id/rl_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+
+        >
+
+            <TextView
+                    android:id="@+id/grandtotal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Grand Total"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+            <TextView
+                    android:id="@+id/textprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/grandtotal"
+                    android:text="Price"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </RelativeLayout>
+
+
+         </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textSize="20sp"
+            android:theme="@style/AppTheme.Button"
+
+            android:id="@+id/btn_order" android:textStyle="bold" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>

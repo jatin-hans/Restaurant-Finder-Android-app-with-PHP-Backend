@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Ultimate</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawe</string>
+    <string name="liveurl">http://192.168.43.73/Backend/</string>
+    <string name="title_activity_termcondition">Termcondition</string>
+
+
+
+
+    <string name="title_activity_gmap">Gmap</string>
+    <string name="title_activity_review">Review</string>
+    <string name="title_activity_offer">Offer</string>
+    <string name="title_activity_videopage">Videopage</string>
+    <string name="title_activity_category">Category</string>
+    <string name="title_activity_favourite">Favourite</string>
+    <string name="title_activity_booktable">Booktable</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="pref_about_application">ABOUT APPLICATION</string>
+    <string name="pref_version_summary">1.0</string>
+    <string name="pref_version">Version</string>
+    <string name="pref_about_developer">ABOUT DEVELOPER</string>
+    <string name="app_recipient">admin@redixbit.com</string>
+    <string name="pref_contact_app">Contact Us</string>
+    <string name="pref_contact_app_summary">For more information contact us.</string>
+    <string name="app_subject">Restaurant</string>
+    <string name="email_no_client">No email client installed.</string>
+    <string name="email_choose_from_client">Choose an email client from...</string>
+    <string name="title_activity_about">About</string>
+
+    <string name="opensans">OpenSans-Regular.ttf</string>
+
+
+
+</resources>
+
+
+
+
+

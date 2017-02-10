@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_fav"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/cellfav12" >
+
+        <RelativeLayout
+            android:id="@+id/rl_img_round"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/img_round"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/b3" />
+
+            <TextView
+                android:id="@+id/txt_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="R"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_rest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rl_img_round"
+            android:text="Restaurant Name"
+            style="@style/cellTextviewStyle"/>
+
+        <ImageView
+            android:id="@+id/img_addmap"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/txt_rest_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/rl_img_round"
+            android:background="@drawable/addressmapicon" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rest_name"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_addmap"
+            android:lines="2"
+            android:text="Udhna Sachin Highway,G.I.D.C. Naka,sachin,Udhna,Surat,Gujarat 394230"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rl_img_round"
+            android:background="@drawable/car" />
+
+
+        <TextView
+            android:id="@+id/txt_km"
+            style="@style/cellTextviewStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_car"
+            android:text="1 Km" />
+
+        <ImageView
+            android:id="@+id/img_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/more_icon12" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
